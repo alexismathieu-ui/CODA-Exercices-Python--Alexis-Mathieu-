@@ -15,8 +15,8 @@ def exercice3():
 
 def exercice4():
     print("Exercice 4 : Calculer l'âge.")
-    âge = int(input("Entrez votre année de naissance : "))
-    calcule_année = 2025 - âge
+    année = int(input("Entrez votre année de naissance : "))
+    calcule_année = 2025 - année
     print("Vous devez avoir ", calcule_année , "ans")
 
 def exercice5():
@@ -74,29 +74,124 @@ def exercice12():
 
 def exercice13():
     print("Exercice 13 : Compter jusqu'à 5")
-    for i in range(1, 5)
-    print(i)
+    for i in range(1, 6):
+        print(i)
 
 def exercice14():
-    print("Exercice 14 : Moitié d'un nombre")
+    print("Exercice 14 : Table de 2")
+    for i in range(1, 6):
+        print(i, "x 2 = ", i*2) 
 
 def exercice15():
-    print("Exercice 15 : Moitié d'un nombre")
+    print("Exercice 15 : Périmètre du carré")
+    ca = int(input("Entrez la taille d'un côté du carré : "))
+    périmètre = ca * 4
+    print("Le périmètre du carré est", périmètre)
 
 def exercice16():
-    print("Exercice 16 : Moitié d'un nombre")
+    print("Exercice 16 : Aire du carré")
+    carr = int(input("Entrez la taille d'un côté du carré : "))
+    aire = carr * 2
+    print("Le aire du carré est", aire)
 
 def exercice17():
-    print("Exercice 17 : Moitié d'un nombre")
+    print("Exercice 17 : Conversion Euro en Dollar")
+    euro = int(input("Entrez votre valeur en euro "))
+    dollar = euro * 1.1
+    print("La valeur de", euro, "€ est de", dollar, "$")
 
 def exercice18():
-    print("Exercice 18 : Moitié d'un nombre")
+    print("Exercice 18 : Conversion Minutes en secondes")
+    minutes = int(input("Entrez votre valeur en minutes "))
+    secondes = minutes * 60
+    print(minutes, "minutes en secondes fais", secondes, "secondes")
 
 def exercice19():
-    print("Exercice 19 : Moitié d'un nombre")
-
+    print("Exercice 19 : Prix TTC")
+    prixht = int(input("Entrez le PrixHT "))
+    taxe = prixht * 1.2
+    print("Avec la TVA, le PrixTTC est de", taxe, "€")
+    
 def exercice20():
-    print("Exercice 20 : Moitié d'un nombre")
+    print("Exercice 20 : Message personalisée")
+    nom = input("Entrez votre nom : ")
+    âge = input("Entrez votre âge : ")
+    print(nom, "a", âge, "ans")
+
+def exercice21():
+    print("Exercice 21 : Test Positif et Negatif")
+    nombre = int(input("Entrez un nombre : "))
+    if nombre < 0 :
+        print(nombre, "est négatif")
+    elif nombre == 0 :
+        print(nombre, "est nul")
+    elif nombre > 0 :
+        print(nombre, "est positif")
+
+def exercice22():
+    print("Exercice 22 : Majeur ou Mineur")
+    âge = int(input("Entrez un âge : "))
+    if âge >= 18 :
+        print("Vous êtes Majeur")
+    else :
+        print("Vous êtes Mineur")
+
+def exercice23():
+    print("Exercice 23 : Note validé")
+    note = int(input("Entre une note : "))
+    if note >= 10 :
+        print("Félicitation ! Vous êtes Validé")
+    else :
+        print("Vous n'êtes pas Validé")
+
+def exercice24():
+    print("Exercice 24 : Plus Grand que")
+    num1 = int(input("Entrez un nombre : "))
+    num2 = int(input("Entrez un deuxième nombre : "))
+    if num1 > num2 :
+        print(num1, "est plus grand que ", num2)
+    else :
+        print(num2, "est plus grand que ", num1)
+
+def exercice25():
+    print("Exercice 25 : Ordre croissant")
+    num1 = int(input("Entrez un nombre : "))
+    num2 = int(input("Entrez un deuxième nombre : "))
+    if num1 < num2 :
+        print(num1, "et", num2, "sont dans l'ordre croissant")
+    else :
+        print(num1, "et", num2, "ne sont pas dans l'ordre croissant")
+
+def exercice26():
+    print("Exercice 26 : Conversion Euro en Dollar")
+
+def exercice27():
+    print("Exercice 27 : Conversion Euro en Dollar")
+
+def exercice28():
+    print("Exercice 28 : Conversion Euro en Dollar")
+
+def exercice29():
+    print("Exercice 29 : Conversion Euro en Dollar")
+
+def exercice30():
+    print("Exercice 30 : Conversion Euro en Dollar")
+
+def exercice31():
+    print("Exercice 31 : Conversion Euro en Dollar")
+
+def exercice32():
+    print("Exercice 32 : Conversion Euro en Dollar")
+
+def exercice33():
+    print("Exercice 33 : Conversion Euro en Dollar")
+
+def exercice34():
+    print("Exercice 34 : Conversion Euro en Dollar")
+
+def exercice35():
+    print("Exercice 35 : Conversion Euro en Dollar")
+
 
 def main():
     while True:
@@ -144,6 +239,36 @@ def main():
             exercice19()
         elif choix == "20":
             exercice20()
+        elif choix == "21":
+            exercice21()
+        elif choix == "22":
+            exercice22()
+        elif choix == "23":
+            exercice23()
+        elif choix == "24":
+            exercice24()
+        elif choix == "25":
+            exercice25()
+        elif choix == "26":
+            exercice26()
+        elif choix == "27":
+            exercice27()
+        elif choix == "28":
+            exercice28()
+        elif choix == "29":
+            exercice29()
+        elif choix == "30":
+            exercice30()
+        elif choix == "31":
+            exercice31()
+        elif choix == "32":
+            exercice32()
+        elif choix == "33":
+            exercice33()
+        elif choix == "34":
+            exercice34()
+        elif choix == "35":
+            exercice35()
         elif choix == "q":
             print("Au revoir 👋")
             break
