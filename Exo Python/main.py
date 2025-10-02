@@ -1,3 +1,5 @@
+import time
+
 def exercice1():
     print("Exercice 1 : Bonjour le monde !")
     print("Hello World !")
@@ -209,10 +211,14 @@ def exercice30():
             print(i)
     
 def exercice31():
-    print("Exercice 31 : Conversion Euro en Dollar")
+    print("Exercice 31 : Compte à rebourd")
+    n = int(input("Entrez un nombre : "))
+    for i in reversed(range(1, n+1)):
+        time.sleep(1)
+        print(i)
 
 def exercice32():
-    print("Exercice 32 : Conversion Euro en Dollar")
+    print("Exercice 32 : Somme jusqu'à N")
 
 def exercice33():
     print("Exercice 33 : Conversion Euro en Dollar")
