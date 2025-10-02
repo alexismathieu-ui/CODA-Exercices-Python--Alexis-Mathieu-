@@ -163,20 +163,51 @@ def exercice25():
         print(num1, "et", num2, "ne sont pas dans l'ordre croissant")
 
 def exercice26():
-    print("Exercice 26 : Conversion Euro en Dollar")
+    print("Exercice 26 : Divisible par 5")
+    nombre = int(input("Entrez un nombre : "))
+    if nombre % 5 == 0 :
+                 print(nombre, "est divisible par 5")
+    else :
+        print (nombre, "n'est pas divisble par 5")
 
 def exercice27():
-    print("Exercice 27 : Conversion Euro en Dollar")
+    print("Exercice 27 : Catégorie d'âge")
+    âge = int(input("Entrez un âge : "))
+    if âge < 12 :
+              print("Vous êtes un Enfant")
+    elif âge >=18 :
+        print("Vous êtes un Adulte")
+    else :
+        print("Vous êtes un Adolescent")
 
 def exercice28():
-    print("Exercice 28 : Conversion Euro en Dollar")
+    print("Exercice 28 : Température de l'eau")
+    température_eau = int(input("Entrez la Température de l'eau : "))
+    if température_eau < 0:
+                          print("L'eau devient de la Glace")
+    elif température_eau > 100:
+        print("L'eau devient du Gaz")
+    else :
+        print("L'eau est liquide")
 
 def exercice29():
-    print("Exercice 29 : Conversion Euro en Dollar")
+    print("Exercice 29 : Mention au Bac")
+    note = int(input("Entre une note : "))
+    if note <= 8 :
+        print("Recalé")
+    elif note >= 9 and note <= 13 :
+        print("Passable")
+    elif note >=14 and note <= 16:
+        print("Bien")
+    else :
+        print ("Très bien")
 
 def exercice30():
-    print("Exercice 30 : Conversion Euro en Dollar")
-
+    print("Exercice 30 : Comptez de 1 à N")
+    n = int(input("Entrez un nombre : "))
+    for i in range(1, n+1):
+            print(i)
+    
 def exercice31():
     print("Exercice 31 : Conversion Euro en Dollar")
 
