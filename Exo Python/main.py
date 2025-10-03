@@ -308,10 +308,21 @@ def exercice40():
         print("Validé !")
 
 def exercice41():
-    print("Exercice 41 : Carré Parfaits")
+    print("Exercice 41 : Moyenne de 5 notes")
+    note1 = int(input("Entrez la premier note : "))
+    note2 = int(input("Entrez la deuxième note : "))
+    note3 = int(input("Entrez la premier note : "))
+    note4 = int(input("Entrez la deuxième note : "))
+    note5 = int(input("Entrez la premier note : "))
+    moyenne = (note1 + note2 + note3 + note4 + note5)/5
+    print("La moyenne est de : ", moyenne)
 
 def exercice42():
-    print("Exercice 42 : Carré Parfaits")
+    print("Exercice 42 : Min et Max de 5 nombre")
+    liste = [24,12,90,43,4]
+    print("Le minimum de la liste est : ", min(liste))
+    print("le maximum de la liste est ", max(liste))
+    
 
 def exercice43():
     print("Exercice 43 : Carré Parfaits")
