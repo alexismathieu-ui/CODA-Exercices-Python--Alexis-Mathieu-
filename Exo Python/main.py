@@ -219,15 +219,34 @@ def exercice31():
 
 def exercice32():
     print("Exercice 32 : Somme jusqu'à N")
+    n = int(input("Entrez un nombre : "))
+    s = 0
+    for i in range(1, n+1):
+        s += i
+    print("S = ", s)
 
 def exercice33():
-    print("Exercice 33 : Conversion Euro en Dollar")
+    print("Exercice 33 : Table de multiplication")
+    n = int(input("Entrez la table que vous voulez : "))
+    for i in range(1, 11):
+        print(i, "x ", n, "= ", i*n)
 
 def exercice34():
-    print("Exercice 34 : Conversion Euro en Dollar")
+    print("Exercice 34 : Nombre pairs jusqu'à N")
+    n = int(input("Entrez un nombre : "))
+    for i in range(1, n+1):
+        if i % 2 == 0 :
+            print(i)
+        else :
+            print("")
 
 def exercice35():
-    print("Exercice 35 : Conversion Euro en Dollar")
+    print("Exercice 35 : Carré Parfaits")
+    n = int(input("Entrez la valeur que vous voulez : "))
+    i=1
+    while i*i < n :
+        print(i*i)
+        i = i+1
 
 
 def main():
