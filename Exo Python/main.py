@@ -404,6 +404,48 @@ def exercice50():
       nombre0 = nombre1
       nombre1 = suivant
 
+def exercice51():
+    print("Exercice 51 : Triangle de pascal")
+    n = int(input("Entrez la taille du triangle que vous voulez : "))
+    triangle = []
+    for i in range(n):
+            ligne = [1] * (i + 1)
+            for j in range(1, i):
+                ligne[j] = triangle[i-1][j-1] + triangle[i-1][j]
+            triangle.append(ligne)
+    for i in range(n):
+        print(' ' * (n - i - 1), end='')
+        for nombre in triangle[i]:
+            print(nombre, end=' ')
+        print() 
+
+def exercice52():
+    print("Exercice 52 : Carré Parfaits")
+
+def exercice53():
+    print("Exercice 53 : Carré Parfaits")
+
+def exercice54():
+    print("Exercice 54 : Carré Parfaits")
+
+def exercice55():
+    print("Exercice 55 : Carré Parfaits")
+
+def exercice56():
+    print("Exercice 56 : Carré Parfaits")
+
+def exercice57():
+    print("Exercice 57 : Carré Parfaits")
+
+def exercice58():
+    print("Exercice 58 : Carré Parfaits")
+
+def exercice59():
+    print("Exercice 59 : Carré Parfaits")
+
+def exercice60():
+    print("Exercice 60 : Carré Parfaits")
+
 def main():
     while True:
         print("\n=== Menu des exercices ===")
@@ -510,6 +552,26 @@ def main():
             exercice49()
         elif choix == "50":
             exercice50()
+        elif choix == "51":
+            exercice51()
+        elif choix == "52":
+            exercice52()
+        elif choix == "53":
+            exercice53()
+        elif choix == "54":
+            exercice54()
+        elif choix == "55":
+            exercice55()
+        elif choix == "56":
+            exercice56()
+        elif choix == "57":
+            exercice57()
+        elif choix == "58":
+            exercice58()
+        elif choix == "59":
+            exercice59()
+        elif choix == "60":
+            exercice60()
         elif choix == "q":
             print("Au revoir 👋")
             break
