@@ -321,32 +321,88 @@ def exercice42():
     print("Exercice 42 : Min et Max de 5 nombre")
     liste = [24,12,90,43,4]
     print("Le minimum de la liste est : ", min(liste))
-    print("le maximum de la liste est ", max(liste))
-    
+    print("le maximum de la liste est ", max(liste))    
 
 def exercice43():
-    print("Exercice 43 : Carré Parfaits")
+    print("Exercice 43 : Compteur de voyelle")
+    n = input("Entrez un mot (sans accent) : ")
+    liste_voyelles=["a","e","i","o","u","y","A","E","I","O","U","Y"]
+    voyelles = 0
+    for lettre in n:
+        if lettre in liste_voyelles:
+            voyelles += 1
+
+    if voyelles == 0 :
+        print("Ce Mot ne comporte pas de voyelles")
+
+    elif voyelles > 0 :
+        print("Ce Mot comporte ",  voyelles, "voyelle(s)")
 
 def exercice44():
-    print("Exercice 44 : Carré Parfaits")
+    print("Exercice 44 : Mot inversés")
+    n = input("Entrez un mot : ")
+    mot_inversé = n[::-1]
+    print(mot_inversé)
 
 def exercice45():
-    print("Exercice 45 : Carré Parfaits")
+    print("Exercice 45 : Somme d'une liste")
+    liste = [4,7,9,13]
+    print("La somme de la liste est", sum(liste))
 
 def exercice46():
-    print("Exercice 46 : Carré Parfaits")
+    print("Exercice 46 : Recherche dans une liste")
+    liste = [4,2,11,0,5,9,7,19]
+    chiffre = int(input("Demander si un nombre est dans la liste : "))
+    if chiffre in liste :
+                  print("Oui !, ", chiffre, "est bien dans la liste !")
+    else :
+        print("Non, ", chiffre, "n'est pas dans la liste !")
 
 def exercice47():
-    print("Exercice 47 : Carré Parfaits")
+    print("Exercice 47 : Compter les occurences")
+    liste = [4,2,11,0,4,8,9,0,7,2,4,7,0,8,11,19,5,9,7,19]
+    chiffre = int(input("Demander si un nombre est dans la liste : "))
+    if chiffre in liste:
+        print(chiffre, "apparait", liste.count(chiffre), "dans la liste")
+    else :
+        print(chiffre, "n'est pas dans la liste")
 
 def exercice48():
-    print("Exercice 48 : Carré Parfaits")
+    print("Exercice 48 : Liste des diviseurs")
+    n = int(input("Entrez un nombre : "))
+    for i in range(1,n+1):
+        if n % i == 0 :
+            print(i)
 
 def exercice49():
-    print("Exercice 49 : Carré Parfaits")
+    print("Exercice 49 : Nombre premier")
+    n = int(input("Entrez un nombre : "))
+    if n <=3 :
+        print(n, "n'est pas un nombre premier")
+        return
+    a = 2
+    while a < n and n % a != 0:
+        a += 1
+
+    if a == n:
+        print(n, "est un nombre premier")
+    else:
+        print(n, "n'est pas un nombre premier")
 
 def exercice50():
-    print("Exercice 50 : Carré Parfaits")
+    print("Exercice 50 : Fibonacci jusqu'à N")
+    n = int(input("Entrez la valeur que vous voulez : "))
+    nombre0 = 0
+    nombre1 = 1
+
+    print(nombre0, ",", nombre1, end=", ") #end = copie une variable sur la même ligne
+ 
+    for i in range(2, n):
+      suivant = nombre0 + nombre1
+      print(suivant, end=", ")
+ 
+      nombre0 = nombre1
+      nombre1 = suivant
 
 def main():
     while True:
