@@ -1,4 +1,5 @@
 import time
+import random
 
 def exercice1():
     print("Exercice 1 : Bonjour le monde !")
@@ -248,6 +249,93 @@ def exercice35():
         print(i*i)
         i = i+1
 
+def exercice36():
+    print("Exercice 36 : Répéter un mot")
+    n = int(input("Entrez un nombre : "))
+    i = 0
+    while i < n :
+        print("Bonjour !")
+        i = i+1
+
+def exercice37():
+    print("Exercice 37 : Pyramide d'étoile")
+    ligne = int(input("Entrez la taille de la pyramide : "))
+    espace = ligne - 1
+    étoile = 1
+    for i in range(0, ligne):
+        print(espace*" " + étoile*"*")
+        espace -= 1
+        étoile += 2
+
+def exercice38():
+    print("Exercice 38 : Calculatrice simple")
+
+    print("  Veuillez taper dans le menu soit : 1 pour addition ou 2 pour soustraction ou 3 pour multiplication ou 4 pour division  ")
+    menu = int(input("Choisissez l'opération faire : "))
+    num1 = int(input("Entrez votre premier nombre : "))
+    num2 = int(input("Entrez votre deuxième nombre : "))
+    if menu == 1 :
+        print(num1, "+ ", num2, "= ", num1+num2)
+    elif menu == 2 :
+        print(num1, "- ", num2, "= ", num1-num2)
+    elif menu == 3 :
+        print(num1, "x ", num2, "= ", num1*num2)
+    elif menu == 4  :
+        if num2 != 0 :
+            print(num1, "/ ", num2, "= ", num1/num2)
+        else :
+            print("Erreur ! Vous ne pouvez pas divisez par 0")
+    else :
+        print("Vous n'avez rien choisit")
+
+def exercice39():
+    print("Exercice 39 : Pair ou Impair")
+    nombre = random.randint(0, 100)
+    choix  = input("Pair ou Impair  : ")
+    if nombre % 2 == 0 and choix == 'Pair' :
+        print("Bravo !!! le nombre était : ", nombre)
+    elif nombre % 2 != 0 and choix == 'Impair':
+        print("Bravo !!! le nombre était : ", nombre)
+    else :
+        print("Perdu, le nombre était : ", nombre)
+
+def exercice40():
+    print("Exercice 40 : Validation d'un mot de passe")
+    mdp = input("Entrez un mot de passe : ")
+    if len(mdp) < 6 :
+        print("Non Validé, Trop Court !")
+    else :
+        print("Validé !")
+
+def exercice41():
+    print("Exercice 41 : Carré Parfaits")
+
+def exercice42():
+    print("Exercice 42 : Carré Parfaits")
+
+def exercice43():
+    print("Exercice 43 : Carré Parfaits")
+
+def exercice44():
+    print("Exercice 44 : Carré Parfaits")
+
+def exercice45():
+    print("Exercice 45 : Carré Parfaits")
+
+def exercice46():
+    print("Exercice 46 : Carré Parfaits")
+
+def exercice47():
+    print("Exercice 47 : Carré Parfaits")
+
+def exercice48():
+    print("Exercice 48 : Carré Parfaits")
+
+def exercice49():
+    print("Exercice 49 : Carré Parfaits")
+
+def exercice50():
+    print("Exercice 50 : Carré Parfaits")
 
 def main():
     while True:
@@ -325,6 +413,36 @@ def main():
             exercice34()
         elif choix == "35":
             exercice35()
+        elif choix == "36":
+            exercice36()
+        elif choix == "37":
+            exercice37()
+        elif choix == "38":
+            exercice38()
+        elif choix == "39":
+            exercice39()
+        elif choix == "40":
+            exercice40()
+        elif choix == "41":
+            exercice41()
+        elif choix == "42":
+            exercice42()
+        elif choix == "43":
+            exercice43()
+        elif choix == "44":
+            exercice44()
+        elif choix == "45":
+            exercice45()
+        elif choix == "46":
+            exercice46()
+        elif choix == "47":
+            exercice47()
+        elif choix == "48":
+            exercice48()
+        elif choix == "49":
+            exercice49()
+        elif choix == "50":
+            exercice50()
         elif choix == "q":
             print("Au revoir 👋")
             break
